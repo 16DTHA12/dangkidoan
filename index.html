@@ -23,14 +23,15 @@
       <p style="text-align:left;"><strong>ĐĂNG KÍ THEO MẪU:</strong> <b class="b_">Họ và Tên - MSSV (Lưu ý: Tối đa 6 thành viên)</b> <br>Nguyễn Văn A - 1611060111 <br>Nguyễn Văn B - 1611060454</p>
 
       <label for="" class="lb_left"><b>Tên thành viên nhóm</b> </label>
-      <textarea name="HovaTen" class="noidung" id="InputTextArea" type="text" placeholder="Điền thông tin tên thành viên và mssv  " onkeyup="resizeTextarea('InputTextArea')" onfocus="clearContents(this);" required></textarea>
+      <textarea name="HovaTen" class="noidung" id="InputTextArea" type="text" placeholder="Điền thông tin tên thành viên và mssv  " onkeyup="resizeTextarea('InputTextArea')" onfocus="clearContents(this);" required="" oninvalid="this.setCustomValidity('Vui lòng nhập thông tin sinh viên')" oninput="setCustomValidity('')"></textarea>
       
       <label for="" class="lb_left"><b>Tên đề tài</b> </label>
-      <input name="DeTai" type="text" placeholder="Điền thông tin tên đề tài">
+      <input name="DeTai" type="text" placeholder="Điền thông tin tên đề tài" required="" oninvalid="this.setCustomValidity('Vui lòng nhập tên đề tài')" oninput="setCustomValidity('')">
       <!-- <input name="lastName" type="text" placeholder="Last Name"> -->
       <button class="btn_submit_form" type="submit">Đăng kí </button>
+      <p style="text-align:center;font-size: 10px;">© 2019 L.C.Hiếu Student of N.D.Ánh - Database: Google Sheet, Host: Github</p>
+
     </form>
-    <p style="text-align:center;font-size: 10px;">© 2019 L.C.Hiếu Student of N.D.Ánh - Database: Google Sheet, Host: Github</p>
 
     <div class="loading js-loading is-hidden">
       <div class="loading-spinner">
