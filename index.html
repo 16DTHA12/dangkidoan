@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Đăng kí nhóm đồ án môn học</title>
+  <meta name="description" content="Thông tin form đăng kí đồ án">
+  <link href="./favicon.png" rel="shortcut icon">
+
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira" rel="stylesheet">
+  <script src="./formdata-poly.js"></script>
+  <script src="./prefixfree.min.js"></script>
+  <script src="./promise-polyfill.js"></script>
+  <script src="./whatwg-fetch.js"></script>
+</head>
+<body>
+
+  <div class="form-container">
+    <form name="submit-to-google-sheet" class="min-width-form">
+      <label for="header_"><h2>THÔNG TIN ĐĂNG KÍ ĐỒ ÁN MÔN HỌC BẢO MẬT THÔNG TIN</h2></label>
+      <p style="text-align:left;"><strong>ĐĂNG KÍ THEO MẪU:</strong> <b class="b_">Họ và Tên - MSSV (Lưu ý: Tối đa 6 thành viên)</b> <br>Nguyễn Văn A - 1611060111 <br>Nguyễn Văn B - 1611060454</p>
+
+      <label for="" class="lb_left"><b>Tên thành viên nhóm</b> </label>
+      <textarea name="HovaTen" class="noidung" id="InputTextArea" type="text" placeholder="Điền thông tin tên thành viên và mssv  " onkeyup="resizeTextarea('InputTextArea')" onfocus="clearContents(this);" required></textarea>
+      
+      <label for="" class="lb_left"><b>Tên đề tài</b> </label>
+      <input name="DeTai" type="text" placeholder="Tên đề tài">
+      <!-- <input name="lastName" type="text" placeholder="Last Name"> -->
+      <button class="btn_submit_form" type="submit">Đăng kí </button>
+    </form>
+
+    <div class="loading js-loading is-hidden">
+      <div class="loading-spinner">
+        <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+      </div>
+    </div>
+
+    <p class="js-success-message is-hidden">Đăng kí thành công!</p>
+    <p class="js-error-message is-hidden">Lỗi rồi!</p>
+  </div>
+  <div class="image_">
+    <img src="./lucxtyr83kv21.jpg" alt="" srcset="">
+  </div>
+
+  <script src="./submit-form.js"></script>
+
+</body>
+</html>
