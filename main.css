@@ -51,7 +51,7 @@
       font-size: 18px; 
     }
 
-    input:focus {
+    input:focus,textarea:focus {
       outline: 1px solid var(--accent);
     }
 
@@ -158,3 +158,13 @@
     .min-width-form{
       min-width: 900px;
     }
+
+    input[name=DeTai]{
+      background-color: white;
+      border: 2px solid lightgrey;
+      border-bottom: 2px solid lightgrey;
+      border-right: 1px solid lightgrey;
+      border-left: 1px solid lightgrey;
+      box-shadow: 0px 1px 1px lightgrey;
+    }
+
