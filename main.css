@@ -172,3 +172,26 @@
       font-size: 31px;
       font-weight: 200;
   }
+  .min-width-form {
+    min-width: 900px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.alert-box p {
+  padding: 91px;
+  /* margin: 0 auto; */
+  color: red;
+  font-size: 17px;
+  text-shadow: 0 5px 4px;
+  font-weight: 500;
+}
+
+.alert-box {
+  /* margin: 0 auto; */
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  height: 200px;
+  background-color: lightblue;
+  border-radius: 11px;
+}
